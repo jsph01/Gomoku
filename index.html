@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="js/main.js"></script>
+    <script src="js/connect4.js"></script>
+    <title>Gomoku</title>
+    <style>
+      .board{
+       position:relative;
+       left:200px;
+       width:800px;
+      }
+      /*
+      body{
+        background-image: url("/Users/gasfloaner/Desktop/10x10board.gif");
+        width:100%;
+      }
+      */
+      .classMessage{
+        position: absolute;
+        top:100px;
+        left:80px;
+        color:green;
+      }
+      .helpText{
+        position: absolute;
+        top:60px;
+        left:8px;
+        color:green;
+        background: solid;
+        background-color: beige;
+        z-index:1000;
+      }
+      .h1Title{
+        font-size: 44px;
+      }
+    </style>
+</head>
+    <body>
+        <h1 class="h1Title">Gomoku</h1>
+        <h4> Go <span id= "player"> play!</span></h4>
+        <div id="gomoku" class="board"></div>
+        <br>
+        <button id="help">Help</button>
+        <button id="restart">Replay</button>
+        <button id="autoPlay">Auto Play</button>
+        <div id="divMessage" class="classMessage">
+        </div>
+        <div id='divHelpText' class='helpText'>
+          <p>
+             The first player to get 5 dots wins!
+             
+          </p>
+        </div>
+  </html>
